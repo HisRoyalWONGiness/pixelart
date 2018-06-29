@@ -37,9 +37,17 @@ console.log("makeGrid is running!")
     console.log("changeColor is running!");
     var color;
     color = $("#colorPicker").val();
-    $(this).attr('bgcolor', color);
-  });
-}
+
+   if ($(this).attr('style')) { 
+              $(this).removeAttr('style')
+          }else {
+              $(this).attr('style', 'background-color:' + color);
+          }
+  })
+
+  };
+
+ 
 // When size is submitted by the user, call makeGrid()
 var submitQuery;
 
