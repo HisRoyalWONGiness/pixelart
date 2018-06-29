@@ -12,9 +12,9 @@ console.log("makeGrid is running!")
 	
 	var canvas, cell, gridHeight, gridWidth, rows;
 	
-	canvas = $('#pixel_canvas');
-	gridHeight = $('#input_height').val();
-	gridWidth = $('#input_width').val();
+	canvas = $('#pixelCanvas');
+	gridHeight = $('#inputHeight').val();
+	gridWidth = $('#inputWidth').val();
 	
 	canvas.children().remove()
 	
