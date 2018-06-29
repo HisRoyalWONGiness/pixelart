@@ -42,7 +42,7 @@ console.log("makeGrid is running!")
 // When size is submitted by the user, call makeGrid()
 var submitQuery;
 
-submitQuery = $('input[type="submit"]')
+submitQuery = $('input[type="submit"]');
 
 submitQuery.click(function(event) {
   event.preventDefault();
