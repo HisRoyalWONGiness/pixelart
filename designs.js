@@ -1,40 +1,50 @@
-// Creates global variables to be used thrughout code
-var canvas = $("#pixelCanvas");
-var button = $("button, input[type='submit']");
-var colorInput = $("#colorPicker").val();
+// Select color input
+// Select size input
 
-// makeGrid function uses the input values to create a table after
-// clearing existing table.
+// When size is submitted by the user, call makeGrid()
+
 function makeGrid() {
-  var row = $("#inputHeight").val();
-  var col = $("#inputWeight").val();
-  var td = "<td></td>".repeat(col);
-  canvas.empty();
-  for (row; row > 0; row--) {
-    canvas.append("<tr>" + td + "</tr>");
-  }
+
+// Your code goes here!
+console.log("makeGrid is running!")
+	
+	// Select size input
+	
+	var canvas, cell, gridHeight, gridWidth, rows;
+	
+	canvas = $('#pixel_canvas');
+	gridHeight = $('#input_height').val();
+	gridWidth = $('#input_width').val();
+	
+	canvas.children().remove()
+	
+	for (x = 0; x < gridHeight; x++) {
+	canvas.append('<tr></tr>');
+	}
+	
+	rows = $('tr');
+	
+	for (y = 0; y < gridWidth; y++) {
+	rows.append('<td></td>');
+	} 
+	
+	cell = canvas.find('td');
+	
+	// When td is clicked by the user, change color of td
+	cell.click(function() {
+		// Select color input
+		console.log("changeColor is running!");
+		var color;
+		color = $("#colorPicker").val();
+		$(this).attr('bgcolor', color);
+	});
 }
+// When size is submitted by the user, call makeGrid()
+var submitQuery;
 
-// Listens for button to be clicked to call makeGrid function.
-// TIP: Do not use bracket inside submit listener.
-// It calls it instead of waiting for event
-$(function() {
-  button.click(function(e) {
-    e.preventDefault();
-    makeGrid();
-  });
-});
+submitQuery = $('input[type="submit"]')
 
-// Updates the value of colorInput when user selects new color from palette.
-$("#colorPicker").change(function(event) {
-  colorInput = event.target.value;
-});
-
-// delegates click event to existing td child elements and changes
-// the cell's background color to colorInput value.
-// canvas.on("click", "td", function(event) {
-//   $(this).attr("bgcolor", colorInput);
-// });
-canvas.on("mousedown", "td", function(event) {
-  $(this).attr("bgcolor", colorInput);
+submitQuery.click(function(event) {
+  event.preventDefault();
+  makeGrid();
 });
