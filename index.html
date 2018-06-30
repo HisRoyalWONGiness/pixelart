@@ -1,32 +1,64 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Lab: Pixel Art Maker</h1>
+<div class="pixel-art">
+        <h1>Lab: Pixel Art Maker</h1>
+    </div>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
+    <div class="caption">
+        <h2>Choose Grid Size</h2>
+    </div>
+
+    <br>
+
+    <form id="size-picker">
         Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        <input type="number" id="input-height" name="height" min="1" value="1">
         Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" value="1">
-        <input type="submit">
+        <input type="number" id="input-weight" name="width" min="1" value="1">
     </form>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+    <br>
 
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
+    <div class="caption">  
+        <h2>Pick A Color</h2>
+    </div>
+
+    <input type="color" id="color-picker">
+
+    <!--Using an ordered List to list info on how to play-->
+
+    <div class="info-panel flex-box">
+
+      <div class="close-help btn">close</div>
+
+      <ol>
+        <h2>How to draw</h2>
+        <li>Set the size of the Canvas by increasing the grid Width and Heigth</li>
+        <li>Pick a colour</li>
+        <li>Click individual cells to colour them</li>
+        <li>Click a colored box again to clear the color</li>
+        <li>To change color, pick your new color and click on the desired box</li>
+      </ol>
+    </div>
+
+    <!--Provides the 'Help Button'-->
+
+    <div id="info">
+      <br>
+      <strong class="info-button">Help</strong>
+    </div>
+  
+    <br>
+
+    <div class="caption">
+        <h2>Design Canvas</h2>
+    </div>
+
+    <table id="pixel-canvas"></table>
 
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="designs.js"></script>
+
 </body>
 </html>
