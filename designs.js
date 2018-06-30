@@ -16,13 +16,13 @@ console.log('makeGrid is running!')
   canvas.children().remove()
   
   for (x = 0; x < gridHeight; x++) {
-  canvas.append('<tr></tr>');
+  	canvas.append('<tr></tr>');
   }
   
   rows = $('tr');
   
   for (y = 0; y < gridWidth; y++) {
-  rows.append('<td></td>');
+  	rows.append('<td></td>');
   } 
   
   cell = canvas.find('td');
@@ -35,15 +35,15 @@ console.log('makeGrid is running!')
     color = $("#color-picker").val();
 
    if ($(this).attr('style')) { 
-              $(this).removeAttr('style')
-          }else {
+        $(this).removeAttr('style')
+    }	
+    else {
               $(this).attr('style', 'background-color:' + color);
-          }
+    	}
   })
 
-  };
+};
 
- 
 // When size is submitted by the user, call makeGrid()
 var submitQuery;
 
