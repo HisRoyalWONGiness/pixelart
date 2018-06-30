@@ -2,7 +2,7 @@ body {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.5);
     margin: 0;
-    background-image: url("bg.png");
+   background-image: url("bg.png");
 }
 
 h1 {
