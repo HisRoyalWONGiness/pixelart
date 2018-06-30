@@ -3,6 +3,7 @@ body {
     background-color: rgba(55, 55, 55, 1);
     margin: 0;
     background-image: url("texture-2386378_1920.jpg");
+    background-size: 50%;
 }
 
 h1 {
