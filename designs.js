@@ -1,22 +1,18 @@
 // Select color input
 // Select size input
-
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
-
 // Your code goes here!
-console.log("makeGrid is running!")
+console.log('makeGrid is running!')
   
   // Select size input
   
   var canvas, cell, gridHeight, gridWidth, rows;
   
-  canvas = $('#pixelCanvas');
-  gridHeight = $('#inputHeight').val();
-  gridWidth = $('#inputWeight').val();
-
-  
+  canvas = $('#pixel-canvas');
+  gridHeight = $('#input-height').val();
+  gridWidth = $('#input-weight').val();
   canvas.children().remove()
   
   for (x = 0; x < gridHeight; x++) {
@@ -34,9 +30,9 @@ console.log("makeGrid is running!")
   // When td is clicked by the user, change color of td
   cell.click(function() {
     // Select color input
-    console.log("changeColor is running!");
+    console.log("change-color is running!");
     var color;
-    color = $("#colorPicker").val();
+    color = $("#color-picker").val();
 
    if ($(this).attr('style')) { 
               $(this).removeAttr('style')
@@ -51,9 +47,19 @@ console.log("makeGrid is running!")
 // When size is submitted by the user, call makeGrid()
 var submitQuery;
 
-submitQuery = $('#sizePicker')
+submitQuery = $('#size-picker')
 
 submitQuery.click(function(event) {
   event.preventDefault();
   makeGrid();
+});
+
+// getting the help slide down
+$('#info').on('click', function() {
+  $('.info-panel').slideDown();
+});
+
+// closing the info Panel
+$('.close-help').click(function() {
+  $('.info-panel').slideUp();
 });
