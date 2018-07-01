@@ -2,8 +2,8 @@ body {
     text-align: center;
     background-color: rgba(55, 55, 55, 1);
     margin: 0;
-    background-image: url("texture-2386378_1920.jpg");
-    background-size: 50%;
+    background-image: url("128-198.jpg");
+    background-size: 15%;
 }
 
 h1 {
@@ -53,9 +53,9 @@ input[type=number] {
     width: 60px;
     background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
     background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
-    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    box-shadow: rgba(0,0,0, 0.6) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.6) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.6) 0px 0px 8px;
 }
 
 #pixel-canvas{
@@ -65,15 +65,15 @@ input[type=number] {
 .info-button {
     font-size: 25px;
     color: #000;
-    background-color:rgba(103, 99, 84, 1);
+    background-color:rgba(103, 99, 84, 0.4);
     border: 2px solid #4c1a81;
     border-radius: 90%;
     font-family: "Tahoma", Geneva, sans-serif;
 }
 
 .info-button:hover {
-    background-color: rgba(255, 128, 128, 0.8);
-    border: 2px solid rgba(255, 128, 128, 0.8);
+    background-color: rgba(255, 128, 128, 0.4);
+    border: 2px solid rgba(255, 128, 128, 0.6);
     cursor: pointer; }
 
 .flex-box {
@@ -114,11 +114,11 @@ input[type=number] {
 
 div.info-panel {
     flex-direction: column;
-    height: 80%;
-    padding: 20px;
+    height: 400px;
+    padding: 5px;
     border-radius: 8px;
     box-sizing: border-box;
-    background-color: rgba(153, 153, 153, 0.8);
+    background-color: rgba(153, 153, 153, 0.4);
     position: absolute;
     top: 10%;
     left: 15%;
@@ -135,15 +135,15 @@ div.info-panel {
     max-width: 400px;
     margin: 10px auto;
     padding: 16px;
-    background: rgba(153, 153, 153, 0.8);
-    box-shadow: rgba(0,0,0, 0.6) 0 0 8px;
-    -moz-box-shadow: rgba(0,0,0, 0.6) 0px 0 8px;
-    -webkit-box-shadow: rgba(0,0,0, 0.6) 0 0 8px;
+    background: rgba(153, 153, 153, 0.4);
+    box-shadow: rgba(0,0,0, 0.4) 0 0 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.4) 0px 0 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.4) 0 0 8px;
     border-radius: 7px;
 }
 
 .caption{
-    background: rgba(153, 153, 153, 0.8);
+    background: rgba(153, 153, 153, 0.4);
     padding: 0px 0px;
     border-radius: 7px;
     font-size: 100%;
