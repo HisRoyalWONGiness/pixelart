@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-family: Monoton;
+    font-family: Rochester;
     font-size: 400%;
     margin: 0.2em;
     color: #ddd;
@@ -85,8 +85,8 @@ input[type=number] {
 .close-help {
     background-color: red;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 1%;
+    top: 1%;
     font-size: 1rem;
     transition: all ease-in slow;
 }
