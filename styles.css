@@ -8,7 +8,7 @@ body {
 
 h1 {
     font-family: Monoton;
-    font-size: 70px;
+    font-size: 400%;
     margin: 0.2em;
     color: #ddd;
 }
@@ -114,8 +114,8 @@ input[type=number] {
 
 div.info-panel {
     flex-direction: column;
-    height: 400px;
-    padding: 5px;
+    height: 60%;
+    padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
     background-color: rgba(153, 153, 153, 0.4);
@@ -126,15 +126,15 @@ div.info-panel {
     color: white;
     line-height: 2rem;
     overflow: hidden;
-    margin: 50px 0 auto 800px;
+    margin: 5% 0 auto 56%;
     width: 20em
 }
 
 #size-picker{
     font: 95% "Arial", Helvetica, sans-serif;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 16px;
+    max-width: 25%;
+    margin: 1% auto;
+    padding: 1%;
     background: rgba(153, 153, 153, 0.4);
     box-shadow: rgba(0,0,0, 0.4) 0 0 8px;
     -moz-box-shadow: rgba(0,0,0, 0.4) 0px 0 8px;
@@ -144,10 +144,9 @@ div.info-panel {
 
 .caption{
     background: rgba(153, 153, 153, 0.4);
-    padding: 0px 0px;
+    padding: 0 0;
     border-radius: 7px;
     font-size: 100%;
-    font-weight: 150;
     text-align: center;
     color: #F7F7F7;
     font-family: "Tahoma", Geneva, sans-serif;
